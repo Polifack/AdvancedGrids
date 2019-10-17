@@ -19,9 +19,9 @@ public class WorldGrid : MonoBehaviour
         {
             foreach (KeyValuePair<Vector2, WorldGridNode> entry in _gridHash)
             {
-                TileBase tb = _tilemap.GetTile(entry.Value.gridPositon);
+                bool isTileBase = _tilemap.GetTile(entry.Value.gridPositon) is AutoTile;
 
-                if (tb.GetType().ToString().Equals("AutoTile"))
+                if (isTileBase)
                 {
                     Gizmos.color = Color.red;
                 }
