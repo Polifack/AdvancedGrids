@@ -19,7 +19,17 @@ public class WorldGrid : MonoBehaviour
         {
             foreach (KeyValuePair<Vector2, WorldGridNode> entry in _gridHash)
             {
-                Gizmos.color = Color.green;
+                TileBase tb = _tilemap.GetTile(entry.Value.gridPositon);
+
+                if (tb.GetType().ToString().Equals("AutoTile"))
+                {
+                    Gizmos.color = Color.red;
+                }
+                else
+                {
+                    Gizmos.color = Color.green;
+                }
+
                 Vector3 centerPosition = _tilemap.GetCellCenterWorld(entry.Value.gridPositon);
                 Gizmos.DrawWireCube(centerPosition, _nodeDimensions);
             }
