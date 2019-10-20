@@ -1,0 +1,545 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98132e8516afaae4abc58ebb0178193a, type: 3}
+  m_Name: GrassTile
+  m_EditorClassIdentifier: 
+  gizmosColor: {r: 0.16653132, g: 1, b: 0, a: 1}
+  walkable: 1
+  type: Grass
+  weight: 1
+  tiles:
+  - pos:
+      up_left: 1
+      up_mid: 1
+      up_right: 1
+      mid_left: 1
+      mid_right: 1
+      dw_left: 1
+      dw_mid: 1
+      dw_right: 1
+    sprite: {fileID: 334206725028559986, guid: 3b560b5c6463ccc4d949b09508e6e215, type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 0
+      mid_left: 0
+      mid_right: 0
+      dw_left: 0
+      dw_mid: 0
+      dw_right: 0
+    sprite: {fileID: 7473720736577681036, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 0
+      up_right: 0
+      mid_left: 1
+      mid_right: 0
+      dw_left: 0
+      dw_mid: 0
+      dw_right: 0
+    sprite: {fileID: -1292127141693704184, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 0
+      mid_left: 1
+      mid_right: 0
+      dw_left: 0
+      dw_mid: 0
+      dw_right: 0
+    sprite: {fileID: -1904479299375639767, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 1
+      up_mid: 1
+      up_right: 0
+      mid_left: 1
+      mid_right: 0
+      dw_left: 0
+      dw_mid: 0
+      dw_right: 0
+    sprite: {fileID: -1478279206154258732, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 0
+      up_right: 0
+      mid_left: 0
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 0
+      dw_right: 0
+    sprite: {fileID: 3663643252273500540, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 0
+      mid_left: 0
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 0
+      dw_right: 0
+    sprite: {fileID: -5082026133843468743, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 1
+      mid_left: 0
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 0
+      dw_right: 0
+    sprite: {fileID: -9040094032922357717, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 0
+      up_right: 0
+      mid_left: 1
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 0
+      dw_right: 0
+    sprite: {fileID: -8503665613938603037, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 0
+      mid_left: 1
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 0
+      dw_right: 0
+    sprite: {fileID: -5902334514153646441, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 1
+      up_mid: 1
+      up_right: 0
+      mid_left: 1
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 0
+      dw_right: 0
+    sprite: {fileID: 2397098326143638804, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 1
+      mid_left: 1
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 0
+      dw_right: 0
+    sprite: {fileID: 7743788244309556374, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 1
+      up_mid: 1
+      up_right: 1
+      mid_left: 1
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 0
+      dw_right: 0
+    sprite: {fileID: 7018232422322769089, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 0
+      up_right: 0
+      mid_left: 0
+      mid_right: 0
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: 1501039398283246458, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 0
+      mid_left: 0
+      mid_right: 0
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: 2514097064259942226, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 0
+      up_right: 0
+      mid_left: 1
+      mid_right: 0
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: -2052160466850513396, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 0
+      mid_left: 1
+      mid_right: 0
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: 4867247730097384875, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 1
+      up_mid: 1
+      up_right: 0
+      mid_left: 1
+      mid_right: 0
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: 3720075850936741524, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 0
+      up_right: 0
+      mid_left: 0
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: 2076901679464480788, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 0
+      mid_left: 0
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: -5618770589059872793, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 1
+      mid_left: 0
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: 7108052542108262977, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 0
+      up_right: 0
+      mid_left: 1
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: -2437290206920487482, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 0
+      mid_left: 1
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: 2658970901415668093, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 1
+      up_mid: 1
+      up_right: 0
+      mid_left: 1
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 1
+    sprite: {fileID: 1027776704935617852, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 1
+      mid_left: 1
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: -1620182012462999090, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 1
+      up_mid: 1
+      up_right: 1
+      mid_left: 1
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: -2206407514750054878, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 0
+      up_right: 0
+      mid_left: 1
+      mid_right: 0
+      dw_left: 1
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: -6505477356947180450, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 0
+      mid_left: 1
+      mid_right: 0
+      dw_left: 1
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: 5382803863174600314, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 1
+      up_mid: 1
+      up_right: 0
+      mid_left: 1
+      mid_right: 0
+      dw_left: 1
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: 7929263542646599900, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 0
+      up_right: 0
+      mid_left: 1
+      mid_right: 1
+      dw_left: 1
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: -9161657798826478314, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 1
+      mid_left: 1
+      mid_right: 1
+      dw_left: 1
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: -4481868610225705581, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 1
+      up_mid: 1
+      up_right: 0
+      mid_left: 1
+      mid_right: 1
+      dw_left: 1
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: 580660230188203649, guid: 3b560b5c6463ccc4d949b09508e6e215, type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 1
+      mid_left: 1
+      mid_right: 1
+      dw_left: 1
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: 7082692878392299777, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 1
+      up_mid: 1
+      up_right: 1
+      mid_left: 1
+      mid_right: 1
+      dw_left: 1
+      dw_mid: 1
+      dw_right: 0
+    sprite: {fileID: -8355694405740121085, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 0
+      up_right: 0
+      mid_left: 0
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 1
+    sprite: {fileID: 9014839960662901694, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 0
+      mid_left: 0
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 1
+    sprite: {fileID: -2135713341026318517, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 1
+      mid_left: 0
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 1
+    sprite: {fileID: -114048143167419413, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 0
+      up_right: 0
+      mid_left: 1
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 1
+    sprite: {fileID: -3244344636877417070, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 0
+      mid_left: 1
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 1
+    sprite: {fileID: -8878921051120634578, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 1
+      up_mid: 1
+      up_right: 0
+      mid_left: 1
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 1
+    sprite: {fileID: 8057885266365406167, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 1
+      mid_left: 1
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 1
+    sprite: {fileID: -6438827871933408928, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 1
+      up_mid: 1
+      up_right: 1
+      mid_left: 1
+      mid_right: 1
+      dw_left: 0
+      dw_mid: 1
+      dw_right: 1
+    sprite: {fileID: -5116781314661240097, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 0
+      up_right: 0
+      mid_left: 1
+      mid_right: 1
+      dw_left: 1
+      dw_mid: 1
+      dw_right: 1
+    sprite: {fileID: 5159459184587668731, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 0
+      mid_left: 1
+      mid_right: 1
+      dw_left: 1
+      dw_mid: 1
+      dw_right: 1
+    sprite: {fileID: -7319074877142486488, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 1
+      up_mid: 1
+      up_right: 0
+      mid_left: 1
+      mid_right: 1
+      dw_left: 1
+      dw_mid: 1
+      dw_right: 1
+    sprite: {fileID: 4975534619051307706, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 1
+      up_right: 1
+      mid_left: 1
+      mid_right: 1
+      dw_left: 1
+      dw_mid: 1
+      dw_right: 1
+    sprite: {fileID: -1640143757478114067, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 1
+      up_mid: 1
+      up_right: 1
+      mid_left: 1
+      mid_right: 1
+      dw_left: 1
+      dw_mid: 1
+      dw_right: 1
+    sprite: {fileID: -2655859865029503643, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}
+  - pos:
+      up_left: 0
+      up_mid: 0
+      up_right: 0
+      mid_left: 0
+      mid_right: 0
+      dw_left: 0
+      dw_mid: 0
+      dw_right: 0
+    sprite: {fileID: 1047242250432786206, guid: 3b560b5c6463ccc4d949b09508e6e215,
+      type: 3}

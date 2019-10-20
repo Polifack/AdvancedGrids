@@ -12,18 +12,18 @@ public class WorldGrid : MonoBehaviour
     Tilemap _tilemap;
     Dictionary<Vector2, WorldGridNode> _gridHash;
 
-
     void OnDrawGizmos()
     {
         if (showGrid && _gridHash != null)
         {
             foreach (KeyValuePair<Vector2, WorldGridNode> entry in _gridHash)
             {
-                bool isTileBase = _tilemap.GetTile(entry.Value.gridPositon) is AutoTile;
+                bool isTileBase = _tilemap.GetTile(entry.Value.gridPositon) is DataTile;
 
                 if (isTileBase)
                 {
-                    Gizmos.color = Color.red;
+                    DataTile dt = (DataTile)_tilemap.GetTile(entry.Value.gridPositon);
+                    Gizmos.color = dt.gizmosColor;
                 }
                 else
                 {
