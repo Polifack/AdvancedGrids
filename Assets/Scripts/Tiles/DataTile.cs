@@ -9,4 +9,14 @@ public class DataTile : TileBase
     public bool walkable = false;
     public string type;
     public int weight = 0;
+
+
+    public void Kaboom()
+    {
+        Destroy(this);
+    }
+    public void OnDestroy()
+    {
+        Debug.Log("cya nwn");
+    }
 }

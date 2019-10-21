@@ -8,9 +8,11 @@ public class WorldGrid : MonoBehaviour
     public bool showGrid;
 
     Vector3 _nodeDimensions;
-    Grid _grid;
-    Tilemap _tilemap;
-    Dictionary<Vector2, WorldGridNode> _gridHash;
+    static Grid _grid;
+    static Tilemap _tilemap;
+    static Dictionary<Vector2, WorldGridNode> _gridHash;
+
+    static WorldGrid instance;
 
     void OnDrawGizmos()
     {
@@ -42,6 +44,7 @@ public class WorldGrid : MonoBehaviour
         _tilemap = GetComponentInChildren<Tilemap>();
         _gridHash = new Dictionary<Vector2, WorldGridNode>();
 
+        if (instance == null) instance = this;
         CreateGrid();
     }
     void CreateGrid()
@@ -63,13 +66,46 @@ public class WorldGrid : MonoBehaviour
 
     }
     
-    public void SetColorInPosition(Vector2 worldPosition, Color c)
+    public static void SetColorInPosition(Vector2 worldPosition, Color c)
     {
         WorldGridNode tile;
         if (_gridHash.TryGetValue(worldPosition, out tile))
         {
             _tilemap.SetTileFlags(tile.gridPositon, TileFlags.None);
             _tilemap.SetColor(tile.gridPositon, c);
+        }
+    }
+
+    public static Vector3Int GetGridPositionFromWorld(Vector3 worldPos)
+    {
+        Vector2Int playerPos = new Vector2Int(Mathf.FloorToInt(worldPos.x), (Mathf.FloorToInt(worldPos.y)));
+        WorldGridNode tile;
+        if (_gridHash.TryGetValue(playerPos, out tile))
+        {
+            return tile.gridPositon;
+        }
+        else throw new KeyNotFoundException("Tile not found");
+    }
+
+    public static void SetColorInGridPos(Vector3Int gridPos, Color c)
+    {
+        _tilemap.SetTileFlags(gridPos, TileFlags.None);
+        _tilemap.SetColor(gridPos, c);
+    }
+
+    public static Vector3 GetCenterOfCell(Vector3Int gridPos)
+    {
+        return _tilemap.GetCellCenterWorld(gridPos);
+    }
+
+    public static void DestroyCellAt(Vector3Int gridPos)
+    {
+        bool isTileBase = _tilemap.GetTile(gridPos) is DataTile;
+
+        if (isTileBase)
+        {
+            DataTile dt = (DataTile)_tilemap.GetTile(gridPos);
+            _tilemap.SetTile(gridPos, null);
         }
     }
 }
