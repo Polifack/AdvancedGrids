@@ -72,7 +72,6 @@ public class PlayerMovement : MonoBehaviour
         handleAntimation();
         handleGrid();
     }
-
     void handleInteract()
     {
         if (Input.GetKeyDown(KeyCode.E))

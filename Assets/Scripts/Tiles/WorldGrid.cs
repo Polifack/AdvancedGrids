@@ -87,6 +87,11 @@ public class WorldGrid : MonoBehaviour
         else throw new KeyNotFoundException("Tile not found");
     }
 
+    public static Vector3 GetWorldPositionFromGrid(Vector3Int gridPos)
+    {
+        return _grid.GetCellCenterWorld(gridPos);
+    }
+
     public static void SetColorInGridPos(Vector3Int gridPos, Color c)
     {
         _tilemap.SetTileFlags(gridPos, TileFlags.None);
@@ -107,5 +112,17 @@ public class WorldGrid : MonoBehaviour
             DataTile dt = (DataTile)_tilemap.GetTile(gridPos);
             _tilemap.SetTile(gridPos, null);
         }
+    }
+
+    public static DataTile GetCellAt(Vector3Int gridPos)
+    {
+        bool isTileBase = _tilemap.GetTile(gridPos) is DataTile;
+
+        if (isTileBase)
+        {
+            DataTile dt = (DataTile)_tilemap.GetTile(gridPos);
+            return dt;
+        }
+        else throw new UnityException("Is not a data tile");
     }
 }
